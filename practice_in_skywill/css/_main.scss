@@ -1,0 +1,37 @@
+main {
+    position: relative;
+    background-color: gray; /*確認用背景*/
+    .Name {
+        z-index: 1;
+        position: absolute;
+        left: 10%;
+        top: 63%;
+        color: white;
+    }
+    .event_Contents {
+        .event_Img_SS {
+            width: 100%;
+            height: 500px;
+            .slide_Img_CSS_a {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 90.5vh;
+                object-fit: cover;
+                opacity: 0;
+                transition: 3s ease-in-out;
+                -webkit-transition: 3s ease-in-out;
+            }
+            .slide_Img_CSS_b {
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 90.5vh;
+                object-fit: cover;
+                opacity: 1;
+                transition: 3s ease-in-out;
+                -webkit-transition: 3s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body {
+  background-color: #000;
+}
+
+main {
+  position: relative;
+  background-color: gray;
+  /*確認用背景*/
+}
+
+main .Name {
+  z-index: 1;
+  position: absolute;
+  left: 10%;
+  top: 63%;
+  color: white;
+}
+
+main .event_Contents .event_Img_SS {
+  width: 100%;
+  height: 500px;
+}
+
+main .event_Contents .event_Img_SS .slide_Img_CSS_a {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 90.5vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+}
+
+main .event_Contents .event_Img_SS .slide_Img_CSS_b {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 90.5vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
+  transition: 3s ease-in-out;
+  -webkit-transition: 3s ease-in-out;
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper footer {
+  background-color: rgba(0, 0, 0, 0.4);
+  /*確認用背景*/
+  width: 80%;
+  position: absolute;
+  right: 10%;
+  left: 10%;
+  bottom: 0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.wrapper footer .footer_Prof .footer_icon {
+  width: 50px;
+}
+
+.wrapper footer .footer_Prof .footer_Mail {
+  font-size: medium;
+}
+
+header {
+  background-color: royalblue;
+  /*確認用背景*/
+  height: 70px;
+  position: relative;
+}
+
+header .icon_Holder {
+  margin: 10px;
+}
+
+header .icon_Holder .icon {
+  padding-top: 10px;
+  margin: 0;
+  width: 50px;
+}
+
+header .navi_All {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+header .navi_All .navi_List {
+  text-align: right;
+}
+
+header .navi_All .navi_List .nav {
+  display: block;
+}
+
+header .navi_All .navi_List .nav li {
+  display: inline;
+  margin-left: 30px;
+  text-decoration: none;
+  z-index: 50;
+}
+
+header .navi_All .navi_List .nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .navi_All .navi_List .nav .navi_DD {
+  position: relative;
+  margin-right: 50px;
+}
+
+header .navi_All .navi_List .nav .navi_DD .navi_Sns {
+  padding: 0 40px 0 5px;
+  text-align: left;
+  position: absolute;
+  top: 19px;
+  right: -70px;
+  display: none;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+header .navi_All .navi_List .nav .navi_DD .navi_Sns li {
+  margin: 0;
+  width: 84px;
+  list-style: none;
+  display: list-item;
+}
+/*# sourceMappingURL=style.css.map */
