@@ -11,26 +11,26 @@ $(function() {
 });
 
 
-
-let mySlider = new Swiper('.slider_Contents', {
+//スライドショー
+let mySwiper = new Swiper( '.swiper-container', {
 
     loop: true,
-
-    pagination: {
-        el: '.pagenation',
-        type: 'bullets',
-        clickable: true,
+    watchSlidesProgress: true,
+    watchSlidesVisibility: true,
+    autoplay: {
+        delay: 2000,
+    },
+    speed: 6000,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
     },
 
-    navigation: { //ナビゲーションの矢印オプション
-        nextEl: '.button_next',
-        prevEl: '.button_prev',
-    },
-
-    scrollbar: {
-        el: 'scrollbar',
-    },
-});
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+})
 
 
 
