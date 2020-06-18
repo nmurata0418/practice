@@ -8,30 +8,62 @@ main {
         top: 63%;
         color: white;
     }
-    .event_Contents {
-        .event_Img_SS {
+    .slider_Contents {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        list-style: none;
+        padding: 0;
+        /* Fix of Webkit flickering */
+        z-index: 1;
+        .slider_Img_Container {
+            position: relative;
             width: 100%;
             height: 500px;
-            .slide_Img_CSS_a {
-                position: absolute;
-                z-index: 0;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            box-sizing: content-box;
+            .slider_Img {
+                flex-shrink: 0;
                 width: 100%;
-                height: 90.5vh;
-                object-fit: cover;
-                opacity: 0;
-                transition: 3s ease-in-out;
-                -webkit-transition: 3s ease-in-out;
+                height: 100%;
+                position: relative;
+                transition-property: transform;
             }
-            .slide_Img_CSS_b {
-                position: absolute;
-                z-index: 0;
-                width: 100%;
-                height: 90.5vh;
-                object-fit: cover;
-                opacity: 1;
-                transition: 3s ease-in-out;
-                -webkit-transition: 3s ease-in-out;
-            }
+        .button_prev, .button_next {
+            position: absolute;
+            top: 50%;
+            width: calc(var(--swiper-navigation-size) / 44 * 27);
+            height: var(--swiper-navigation-size);
+            margin-top: calc(-1 * var(--swiper-navigation-size) / 2);
+            z-index: 10;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--swiper-navigation-color, var(--swiper-theme-color));
+        }
+        }
+        .pagenation {
+            position: absolute;
+            text-align: center;
+            transition: 300ms opacity;
+            transform: translate3d(0, 0, 0);
+            z-index: 10;
+        }
+        .pagenation-bullet {
+            width: 8px;
+            height: 8px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #000;
+            opacity: 0.2;
+        }
+        :root {
+            --swiper-navigation-color: #000000;
+            --swiper-pagination-color: #ffffff;
         }
     }
 }

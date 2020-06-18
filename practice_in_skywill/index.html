@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -28,11 +29,11 @@
                             <li><a href="#">PORTFOLIO</a></li>
                             <li class="navi_DD">
                                 <a href="#">SNS&nbsp;&nbsp;▼</a>
-                                    <ul class="navi_Sns">
-                                        <li><a href="#">twitter</a></li>
-                                        <li><a href="#">pixiv</a></li>
-                                        <li><a href="#">pixiv Sketch</a></li>
-                                    </ul>
+                                <ul class="navi_Sns">
+                                    <li><a href="#">twitter</a></li>
+                                    <li><a href="#">pixiv</a></li>
+                                    <li><a href="#">pixiv Sketch</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -47,11 +48,26 @@
                     <h2>ペンネーム</h2>
                 </div>
                 <!--Event Contents-->
-                <div class="event_Contents">
-                    <div class="event_Img_SS">
-                        <img src="img/img1.jpg" id="slide_Img_a" class="slide_Img_CSS_a" alt="イラストa" >
-                        <img src="img/img2.jpg" id="slide_Img_b" class="slide_Img_CSS_b" alt="イラストb">
+                <div class="slider_Contents">
+                    <!--スライドショー画像-->
+                    <div class="slider_Img_Container">
+                        <div class="slider_Img"><img src="img/img0.jpg"></div>
+                        <div class="slider_Img"><img src="img/img1.jpg"></div>
+                        <div class="slider_Img"><img src="img/img2.jpg"></div>
+                        <div class="slider_Img"><img src="img/img3.jpg"></div>
+                        <div class="slider_Img"><img src="img/img4.jpg"></div>
                     </div>
+                    <!--スライドショー画像 END-->
+                    <!--ページネーション-->
+                    <div class="pagenation"></div>
+                    <!--ページネーション END-->
+                    <!--ナビゲーションボタン-->
+                    <div class="button_prev"></div>
+                    <div class="button_next"></div>
+                    <!--ナビゲーションボタン END-->
+                    <!--スクロールバー-->
+                    <div class="scrollbar"></div>
+                    <!--スクロールバー END-->
                 </div>
             </main>
             <!--Main END-->
@@ -66,9 +82,8 @@
         </div>
     </div>
 
-    <script>
-
-    </script>
+    <!--Javascript-->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>

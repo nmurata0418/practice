@@ -9,35 +9,63 @@ $(function() {
     }
     );
 });
+
+
+
+let mySlider = new Swiper('.slider_Contents', {
+
+    loop: true,
+
+    pagination: {
+        el: '.pagenation',
+        type: 'bullets',
+        clickable: true,
+    },
+
+    navigation: { //ナビゲーションの矢印オプション
+        nextEl: '.button_next',
+        prevEl: '.button_prev',
+    },
+
+    scrollbar: {
+        el: 'scrollbar',
+    },
+});
+
+
+
+
 //ドロップダウンメニュー END
 
-//スライドショー　フェードインアウト
-img_src = new Array(
-    "img/img0.jpg",
-    "img/img1.jpg",
-    "img/img2.jpg",
-    "img/img3.jpg",
-    "img/img4.jpg",
-);
-myNowCnt = -1;
-myFlg = 0;
+// //スライドショー フェードインアウト
+// img_src = new Array(
+//     "img/img0.jpg",
+//     "img/img1.jpg",
+//     "img/img2.jpg",
+//     "img/img3.jpg",
+//     "img/img4.jpg",
+// );
+// myNowCnt = -1;
+// myFlg = 0;
 
-function myChange() {
-    myNowCnt = (myNowCnt < img_src.length-1) ? myNowCnt+1 : 0;
-    myFlg = (myFlg == 0) ? 1 : 0;
-    if(myFlg == 0) {
-        document.getElementById("slide_Img_b").src = img_src[myNowCnt];
-        document.getElementById("slide_Img_a").className = "slide_Img_CSS_a";
-        document.getElementById("slide_Img_b").className = "slide_Img_CSS_b";
-    } else {
-        document.getElementById("slide_Img_b").src = img_src[myNowCnt];
-        document.getElementById("slide_Img_a").className = "slide_Img_CSS_b";
-        document.getElementById("slide_Img_b").className = "slide_Img_CSS_a";
-    }
-    setTimeout("myChange()", 4000);
-}
-myChange();
-//スライドショー END
+// function myChange() {
+//     myNowCnt = (myNowCnt < img_src.length-1) ? myNowCnt+1 : 0;
+//     myFlg = (myFlg == 0) ? 1 : 0;
+//     if(myFlg == 0) {
+//         document.getElementById("slide_Img_b").src = img_src[myNowCnt];
+//         document.getElementById("slide_Img_a").className = "slide_Img_CSS_a";
+//         document.getElementById("slide_Img_b").className = "slide_Img_CSS_b";
+//     } else {
+//         document.getElementById("slide_Img_b").src = img_src[myNowCnt];
+//         document.getElementById("slide_Img_a").className = "slide_Img_CSS_b";
+//         document.getElementById("slide_Img_b").className = "slide_Img_CSS_a";
+//     }
+//     setTimeout("myChange()", 4000);
+// }
+// myChange();
+// //スライドショー END
+
+
 
 // //スライドショー フェードなし
 // const img_src = ["img/img1.jpg","img/img2.jpg","img/img4.jpg"];
@@ -51,6 +79,5 @@ myChange();
 //     }
 //     document.getElementById("slide_Img_a").src = img_src[num];
 // }
-
 // setInterval(slideSS_Timer, 1000);
 // //スライドショー END
