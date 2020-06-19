@@ -1,3 +1,9 @@
+//ローディングアニメーション
+window.onload = function() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+}
+
 //ドロップダウンメニュー
 $(function() {
     $("ul.nav li").hover(
