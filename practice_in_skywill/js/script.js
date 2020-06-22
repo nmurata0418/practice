@@ -2,7 +2,7 @@
 window.onload = function() {
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
-}
+};
 
 //ドロップダウンメニュー
 $(function() {
@@ -21,24 +21,20 @@ $(function() {
 let mySwiper = new Swiper( '.swiper-container', {
 
     loop: true,
-    watchSlidesProgress: true,
-    watchSlidesVisibility: true,
     autoplay: {
         delay: 2000,
     },
     speed: 6000,
     effect: 'fade',
     fadeEffect: {
-        crossFade: true
+        crossFade: true,
     },
 
     // navigation: {
     //     nextEl: '.swiper-button-next',
     //     prevEl: '.swiper-button-prev',
     // },
-})
-
-
+});
 
 
 //ドロップダウンメニュー END

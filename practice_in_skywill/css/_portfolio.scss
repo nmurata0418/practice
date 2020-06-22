@@ -1,0 +1,18 @@
+main {
+    margin: 20px 0 0 0;
+    position: relative;
+    top: 0;
+    background-color: gray; /*確認用背景*/
+    .swiper-container {
+        width: 100%;
+        .swiper-wrapper {
+            .swiper-slide {
+                img {
+                    display: inline-block;
+                    height: 500px;
+                    margin-right: 3px;
+                }
+            }
+        }
+    }
+}

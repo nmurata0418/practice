@@ -119,48 +119,21 @@ body {
 }
 
 main {
-  margin-bottom: 0;
+  margin: 20px 0 0 0;
   position: relative;
   top: 0;
   background-color: gray;
   /*確認用背景*/
 }
 
-main .Name {
-  z-index: 100;
-  position: absolute;
-  left: 10%;
-  top: 55%;
-  color: white;
-}
-
 main .swiper-container {
   width: 100%;
-  height: 80vh;
-  margin: 40px auto;
-  z-index: 10;
-}
-
-main .swiper-container .swiper-wrapper .swiper-slide {
-  overflow: hidden;
 }
 
 main .swiper-container .swiper-wrapper .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-main .swiper-container .swiper-wrapper .swiper-slide-prev img,
-main .swiper-container .swiper-wrapper .swiper-slide-active img,
-main .swiper-container .swiper-wrapper .swiper-slide-duplicate-active img {
-  -webkit-animation-name: zoom;
-          animation-name: zoom;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  display: inline-block;
+  height: 500px;
+  margin-right: 3px;
 }
 
 .wrapper {
@@ -191,4 +164,4 @@ main .swiper-container .swiper-wrapper .swiper-slide-duplicate-active img {
 .wrapper footer .footer_Prof .footer_Mail {
   font-size: medium;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=portfolio_style.css.map */

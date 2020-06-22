@@ -1,4 +1,5 @@
 main {
+    margin-bottom: 0;
     position: relative;
     top: 0;
     background-color: gray; /*確認用背景*/
@@ -6,7 +7,7 @@ main {
         z-index: 100;
         position: absolute;
         left: 10%;
-        top: 63%;
+        top: 55%;
         color: white;
     }
     .swiper-container {
