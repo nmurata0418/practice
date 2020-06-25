@@ -119,21 +119,19 @@ body {
 }
 
 main {
-  margin: 20px 0 0 0;
+  margin: 40px 0 0 0;
   position: relative;
   top: 0;
-  background-color: gray;
-  /*確認用背景*/
 }
 
-main .swiper-container {
-  width: 100%;
+main .swiper-container .swiper-wrapper .swiper-slide {
+  width: auto !important;
 }
 
 main .swiper-container .swiper-wrapper .swiper-slide img {
   display: inline-block;
-  height: 500px;
-  margin-right: 3px;
+  margin-left: 3px;
+  height: 80vh;
 }
 
 .wrapper {

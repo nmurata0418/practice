@@ -18,7 +18,7 @@ $(function() {
 
 let mySwiper = new Swiper( '.swiper-container', {
 
-    width: 100,
+    slidesPerView: 'auto',
     freeMode: true,
 
     scrollbar: {

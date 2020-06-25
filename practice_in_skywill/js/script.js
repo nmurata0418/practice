@@ -23,6 +23,7 @@ let mySwiper = new Swiper( '.swiper-container', {
     loop: true,
     autoplay: {
         delay: 2000,
+        disableOnInteraction: false,
     },
     speed: 6000,
     effect: 'fade',
