@@ -3,6 +3,8 @@ main {
     position: relative;
     top: 0;
     background-color: gray; /*確認用背景*/
+
+    //HOME START
     .Name {
         z-index: 100;
         position: absolute;
@@ -36,4 +38,7 @@ main {
             }
         }
     }
+    //HOME END
+
+    //CHARACTOR START
 }
