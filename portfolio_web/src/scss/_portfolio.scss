@@ -1,0 +1,17 @@
+main {
+    margin: 40px 0 0 0;
+    position: relative;
+    top: 0;
+    .swiper-container {
+        .swiper-wrapper {
+            .swiper-slide {
+                width: auto !important;
+                img {
+                    display: inline-block;
+                    margin-left: 3px;
+                    height: 80vh;
+                }
+            }
+        }
+    }
+}

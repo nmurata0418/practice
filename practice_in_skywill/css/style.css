@@ -53,50 +53,57 @@
 header {
   height: 70px;
   position: relative;
+  z-index: 999;
 }
 
-header .icon_Holder {
+header .header-all {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+}
+
+header .header-all .icon_Holder {
   margin: 10px;
 }
 
-header .icon_Holder .icon {
+header .header-all .icon_Holder .icon {
   padding-top: 10px;
-  margin: 15px 0 0 10px;
+  margin: 10px 0 35px 10px;
   width: 50px;
 }
 
-header .navi_All {
-  position: absolute;
-  top: 50px;
+header .header-all .navi_All {
+  position: fixed;
+  top: 85px;
   right: 20px;
 }
 
-header .navi_All .navi_List {
+header .header-all .navi_All .navi_List {
   text-align: right;
 }
 
-header .navi_All .navi_List .nav {
+header .header-all .navi_All .navi_List .nav {
   display: block;
 }
 
-header .navi_All .navi_List .nav li {
+header .header-all .navi_All .navi_List .nav li {
   display: inline;
   margin-left: 30px;
   text-decoration: none;
   z-index: 50;
 }
 
-header .navi_All .navi_List .nav li a {
+header .header-all .navi_All .navi_List .nav li a {
   color: white;
   text-decoration: none;
 }
 
-header .navi_All .navi_List .nav .navi_DD {
+header .header-all .navi_All .navi_List .nav .navi_DD {
   position: relative;
   margin-right: 50px;
 }
 
-header .navi_All .navi_List .nav .navi_DD .navi_Sns {
+header .header-all .navi_All .navi_List .nav .navi_DD .navi_Sns {
   padding: 0 40px 0 5px;
   text-align: left;
   position: absolute;
@@ -107,9 +114,9 @@ header .navi_All .navi_List .nav .navi_DD .navi_Sns {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
-header .navi_All .navi_List .nav .navi_DD .navi_Sns li {
+header .header-all .navi_All .navi_List .nav .navi_DD .navi_Sns li {
   margin: 0;
-  padding: 50px;
+  padding: 30px;
   list-style: none;
   display: list-item;
 }

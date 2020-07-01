@@ -1,0 +1,44 @@
+main {
+    margin-bottom: 0;
+    position: relative;
+    top: 0;
+    background-color: gray; /*確認用背景*/
+
+    //HOME START
+    .Name {
+        z-index: 100;
+        position: absolute;
+        left: 10%;
+        top: 55%;
+        color: white;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 80vh;
+        margin: 40px auto;
+        z-index: 10;
+
+        .swiper-wrapper {
+            .swiper-slide {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .swiper-slide-prev,
+            .swiper-slide-active,
+            .swiper-slide-duplicate-active {
+                img {
+                    animation-name: zoom;
+                    animation-duration: 4s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+    }
+    //HOME END
+
+    //CHARACTOR START
+}
