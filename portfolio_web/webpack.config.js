@@ -10,7 +10,7 @@ const urlLoader = {
     loader: 'url-loader',
     options: {
     esModule: false
-    }
+    
 }
 
   // build時の画像パス書き換え
