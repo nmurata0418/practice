@@ -35,13 +35,6 @@ const fileLoader = {
 
 const imgLoader = enabledSourceMap ? urlLoader : fileLoader
 
-module: {
-    rules: [
-    imgLoader
-    ]
-}
-
-
 module.exports = {
     mode: MODE,
     entry: './src/js/index.js',
@@ -99,10 +92,7 @@ module.exports = {
                 test: /\.html$/,
                 loader: 'html-loader'
             },
-            {
-                test: /\.(gif|png|jpg|eot|wof|woff|woff2|ttf|svg)$/,
-                loader: "url-loader"
-            }
+            imgLoader
         ]
     },
     plugins: [
