@@ -1,19 +1,14 @@
 <template>
     <!--<p>いいね({{ number }})</p> ※Template内は一つのTagだけOK(div内に複数まとめればOK以下参照)-->
     <div>
-        <p>いいね({{ number / 2 }})</p>
+        <p>いいね({{ halfNumber }})</p>
         <button @click="increment">+1</button>
     </div>
 </template>
 
 <script>
     export default {
-    props: {
-        totalNumber: {
-            type: Number,
-            default: 10
-        }
-    },
+    props: ["totalNumber"],
     computed: {
         halfNumber() {
             return this.totalNumber /2;
@@ -21,7 +16,8 @@
     },
     methods: {
         increment() {
-            this.number += 1;
+        // this.totalNumebr += 1;
+            this.$emit("my-click", this.totalNumber + 1);
         }
     }
 };
