@@ -1,4 +1,4 @@
-# udemy_vue
+# vuecli_rebuild
 
 ## Project setup
 ```
