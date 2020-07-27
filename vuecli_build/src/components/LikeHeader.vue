@@ -1,10 +1,10 @@
 <template>
     <div>
-        <slot name="title" :user="user" :text="text" text2="テキスト" :aiueo="test">デフォルトのタイトル</slot>
-        <slot></slot>
-        <slot name="favorite"></slot>
+        <slot :user="user" :text="text" >デフォルトのタイトル</slot>
+        <slot :pass="pass"></slot>
         <hr>
         <p>いいねの数</p>
+        <slot></slot>
     </div>
 </template>
 
@@ -18,6 +18,9 @@ export default {
             },
             text: {
                 text: "あいうえお"
+            },
+            pass: {
+                pass: "password"
             }
         };
     }
