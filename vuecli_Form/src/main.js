@@ -6,6 +6,9 @@ Vue.config.productionTip = false;
 Vue.component("LikeNumber", LikeNumber);
 Vue.directive("border", function () {
 });
+Vue.filter("upperCase", function(value) {
+  return value.toUpperCase();
+});
 //{
 // bind(el, binding, vnode) {}, //重要
 // inserted(el, binding, vnode) {},

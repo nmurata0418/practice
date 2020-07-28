@@ -1,10 +1,17 @@
 <template>
+<div>
   <p v-border:solid.round.shadow="{width: '5px', color: 'red'}">Home</p>
+  <h2>{{ title | upperCase | lowerCase }}</h2>
+  <p>{{ subTitle | lowerCase}}</p>
+</div>
 </template>
 
 
 <script>
+import { tokyoNumber } from "@/tokyoNumber";
+
 export default {
+  mixins: [tokyoNunber],
   directives: {
     border(el, binding) {
     el.style.borderWidth = binding.value.width;
