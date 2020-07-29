@@ -8,10 +8,8 @@
 
 
 <script>
-import { tokyoNumber } from "@/tokyoNumber";
 
 export default {
-  mixins: [tokyoNunber],
   directives: {
     border(el, binding) {
     el.style.borderWidth = binding.value.width;
