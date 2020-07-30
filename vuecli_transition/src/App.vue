@@ -6,15 +6,10 @@
     <button @click="show = !show" >切り替え</button>
     <br><br>
     <transition
+      :css="false"
       @before-enter="beforeEnter"
       @enter="enter"
-      @after-enter="afterEnter"
-      @enter-canceled="enterCanceled"
-
-      @before-leave="beforeLeave"
       @leave="leave"
-      @after-leave="afterLeave"
-      @leave-canceled="leaveCanceled"
     >
       <div class="circle" v-if="show"></div>
     </transition>
@@ -60,6 +55,37 @@ export default {
       myAnimation: "slide",
       myComponent: "ComponentA"
     };
+  },
+  methods: {
+    beforeEnter (el) {
+      el.style.transform = 'scale(0)'},
+    enter (el, done) {
+      let scale = 0;
+      const interval = setInterval(() => {
+        el.style.transform = 'scale(${scale})';
+        scale += 0.1
+        if ( scale > 1) {
+          clearInterval(interval);
+          done();
+        }
+      }, 20);
+    },
+    // afterEnter (el) {
+    // },
+    // enterCancelled (el) {},
+    // beforeLeave (el) {},
+    leave (el, done) {
+      let scale = 1;
+      const interval = setInterval(() => {
+        el.style.transform = 'scale(${scale})';
+        scale -= 0.1
+        if ( scale < 0) {
+          clearInterval(interval);
+          done();
+        }
+      }, 20);},
+    // afterLeave (el) {},
+    // leaveCancelled (el) {}, *v-showを取る時だけ
   }
 };
 </script>
