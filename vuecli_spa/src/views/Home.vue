@@ -9,7 +9,7 @@
 export default {
     methods: {
         toUsers() {
-            this.$router.push('Users');
+            this.$router.push({ path: 'users' });
         }
     }
 }

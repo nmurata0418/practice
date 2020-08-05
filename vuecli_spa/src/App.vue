@@ -8,13 +8,13 @@
         class="link"
       >Home</router-link>
       <router-link
-        to="/Users"
+        to="/users"
         active-class="link--active"
-        exact
         class="link"
       >Users</router-link>
     </nav>
     <router-view></router-view>
+    <!--<Home></Home>-->
   </div>
 </template>
 
@@ -27,3 +27,11 @@
     font-size: 20px;
     }
 </style>
+<script>
+// import Home from "./views/Home.vue";
+// export default {
+//   components: {
+//     Home
+//   },
+// }
+</script>
