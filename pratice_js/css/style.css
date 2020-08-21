@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+body {
+  margin: auto;
+}
+
+body .test .char {
+  color: red;
+}
+/*# sourceMappingURL=style.css.map */
